@@ -7,14 +7,14 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "23032012")  # ⚠️ Required
     API_HASH  = os.environ.get("API_HASH", "5e47a644cc456147dbc79a24511c4dbb") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7264263787:AAGy4pMe2ZeB7A6KrS4Cs22SbN6n1QOhmNo") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6767569372:AAGrLF1L5D6zM0_WmohR9YvKL8D0XkuPFoY") # ⚠️ Required
     FORCE_SUB = os.environ.get('FORCE_SUB', '-1002223940199') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
    
     # database config
     DB_URL  = os.environ.get("DB_URL", "mongodb+srv://rename:rename@cluster0.uzqu6ce.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")  # ⚠️ Required
-    DB_NAME  = os.environ.get("DB_NAME","SnowEncoderBot") 
+    DB_NAME  = os.environ.get("DB_NAME","SnowEncoderBottest") 
 
     # Other Configs 
     ADMIN = int(os.environ.get("ADMIN", "6704116482")) # ⚠️ Required
